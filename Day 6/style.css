@@ -1,0 +1,25 @@
+.intro{
+    background-color:#3c3c3c;
+    margin:-16px;
+    padding:16px;
+    text-align: center;
+}
+body{
+    margin:16px;
+    text-align:center;
+}
+.myphoto{
+    border-radius: 50%;
+    height:350px;
+    width:350px;
+}
+.intro h1,.intro h2{
+    color:white;
+}
+ul{
+    text-align: left;
+}
+#tech,#hobbies{
+    display:flex;
+    justify-content: center;
+}
