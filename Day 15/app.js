@@ -44,3 +44,34 @@ let arr1=["CaHaL","Shivani","Sakshi"];
 arr1.forEach(function(el){
     console.log(el);
 });
+
+
+
+// function diceroll(){
+//     let random=Math.floor(Math.random()*6)+1;
+//     console.log(random);
+
+// }
+// diceroll();
+// function argument(a){
+//     for(let i=1;i<=10;i++){
+//         console.log(${a}*${i} = ${a*i});
+
+//     }
+    
+// }
+// argument(5);
+// function ret(n){
+//     let sum=0;
+//     for(let i=1;i<n;i++){
+//         sum=sum+i;
+        
+       
+
+//     }
+//     console.log(sum);
+//     return sum;
+    
+    
+// }
+// ret(10)
