@@ -1,0 +1,11 @@
+div{
+    border:2px solid solid;
+    text-align:center;
+    background-color:blue;
+    color:white;
+
+}
+ul,li{
+    display:block;
+    justify-content: center;
+}
