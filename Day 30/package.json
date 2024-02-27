@@ -1,0 +1,14 @@
+{
+  "name": "first_npm",
+  "version": "1.0.0",
+  "description": "This is for understanding npm",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cahal Agarwalla",
+  "license": "ISC",
+  "dependencies": {
+    "figlet": "^1.7.0"
+  }
+}
