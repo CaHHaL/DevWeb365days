@@ -1,0 +1,15 @@
+{
+  "name": "with_import",
+  "version": "1.0.0",
+  "description": "Trying out import ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cahal Agarwalla",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "random-words": "^2.0.1"
+  }
+}
