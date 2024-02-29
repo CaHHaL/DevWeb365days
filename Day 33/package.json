@@ -1,0 +1,11 @@
+{
+  "name": "day-33",
+  "version": "1.0.0",
+  "description": "EJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "CAHAL AGARWALLA",
+  "license": "ISC"
+}
