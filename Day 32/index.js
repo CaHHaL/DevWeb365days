@@ -23,9 +23,9 @@ app.get("/apple", (req, res) => {
 app.get("/help", (req, res) => {
   res.send("This is the help path");
 });
-app.get("*", (req, res) => {
-  res.send("This path is not available");
-});
+// app.get("*", (req, res) => {
+//   res.send("This path is not available");
+// });
 ///Nodemon installation issue //Need to check it once again
 
 //Variable path
@@ -34,4 +34,14 @@ app.get("/:username/:password", (req, res) => {
   res.send(
     `Welcome ${username} Your user name is ${username} and password is ${password}`
   );
+});
+
+app.get("/search", (req, res) => {
+  let { q } = req.query;
+  console.log(req.query);
+  if (!q) {
+    res.send(`<h1>Unsucessful!!</h1> <p>The url you send is invalid </p>`);
+  } else {
+    res.send(`<h1>Sucessful!!</h1> <p>The url you send is ${q} </p>`);
+  }
 });
