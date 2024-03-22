@@ -73,17 +73,85 @@ const User = mongoose.model("User", userSchema);
 // });
 
 //to show one with id 
-User.findOne({_id:"65fc6812570c508cb5a084ab"}).then((res) => {
-    console.log(res);
-  })
-  .catch((err)=>{
-      console.log(err);
-  });
+// User.findOne({_id:"65fc6812570c508cb5a084ab"}).then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//       console.log(err);
+//   });
 
 
-  User.findById("65fc6812570c508cb5a084ab").then((res) => {
-    console.log(res);
-  })
-  .catch((err)=>{
-      console.log(err);
-  });
+//   User.findById("65fc6812570c508cb5a084ab").then((res) => {
+//     console.log(res);
+//   })
+//   .catch((err)=>{
+//       console.log(err);
+//   });
+
+
+
+// User.updateOne({name:"Tony"},{age:12}).then(res=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//Used for modifying the content of the collection
+//single 
+
+
+// User.updateMany({age:{$gt:49}},{age:66}).then(res=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//with multiply documents
+
+// User.findOneAndUpdate({name:"Tony"},{age:65}).then(res=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//It first finds then prints the output and then it updates the result
+
+
+// User.findOneAndUpdate({name:"Tony"},{age:62},{new:true}).then(res=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//its finds updates and then prints the updated value 
+
+
+// User.findByIdAndUpdate({_id:'65fc6812570c508cb5a084ab'},{age:61},{new:true}).then(res=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//changing by id and update
+
+
+// User.deleteOne({name:"Tony"}).then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+//doesn't show what delted in the console so the other method's are used 
+
+
+
+// User.findByIdAndDelete('65fc642356c45cb9f8c51981').then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+
+// User.findOneAndDelete({name:"Tony"}).then((res)=>{
+//   console.log(res);
+// }).catch((err)=>{
+//   console.log(err);
+// });
+
+
+
+
