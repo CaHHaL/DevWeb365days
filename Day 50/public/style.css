@@ -12,3 +12,7 @@ body{
     background-color: blue;
     color: white;
 }
+form{
+    display: inline-block;
+    border-radius:10px;
+}

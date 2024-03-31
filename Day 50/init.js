@@ -16,27 +16,27 @@ async function main() {
 }
 let allchats = [
   {
-    from: "rahul",
-    to: "cahal",
-    msg: "send me your paper",
+    from: "Ironman",
+    to: "Cahal",
+    msg: "Give me some power",
     created_at: new Date(),
   },
   {
-    from: "ravi",
+    from: "Spiderman",
     to: "cahal",
-    msg: "send me your notes",
+    msg: "Give me some web",
     created_at: new Date(),
   },
   {
-    from: "Prince",
-    to: "cahal",
-    msg: "send me your assignment",
+    from: "Superhero",
+    to: "Cahal",
+    msg: "Give me some Energy",
     created_at: new Date(),
   },
   {
-    from: "chhipkali",
+    from: "Thor",
     to: "cahal",
-    msg: "send me your test paper",
+    msg: "Give me some Fire",
     created_at: new Date(),
   },
 ];
