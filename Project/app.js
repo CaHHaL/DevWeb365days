@@ -25,19 +25,23 @@ app.get("/", (req, res) => {
 });
 
 //listing an sample in the dBS
-app.get("/testListing", async (req, res) => {
-  let sampleListing = new Listing({
-    title: "My New villa",
-    description: "By the beach",
-    price: 1200,
-    location: "Calangute Goa",
-    country: "India",
-  });
-  await sampleListing.save();
-  console.log("sample was saved");
-  res.send("Successful testing");
-});
+// app.get("/testListing", async (req, res) => {
+//   let sampleListing = new Listing({
+//     title: "My New villa",
+//     description: "By the beach",
+//     price: 1200,
+//     location: "Calangute Goa",
+//     country: "India",
+//   });
+//   await sampleListing.save();
+//   console.log("sample was saved");
+//   res.send("Successful testing");
+// });
 
+app.get("/listings",async (req,res)=>{
+ const allListings = await Listing.find({});
+ res.render("index.ejs",{allListings});
+})
 
 
 //listening at port number 8080
