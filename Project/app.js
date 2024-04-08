@@ -9,6 +9,7 @@ const methodOverride = require("method-override");
 const ejsMate = require("ejs-mate");
 
 
+
 //Mongo url
 //Mongoose establisment
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
@@ -50,7 +51,8 @@ app.use(express.urlencoded({ extended: true }));
 //using method-override for put method
 app.use(methodOverride("_method"));
 app.engine("ejs",ejsMate);
-
+app.use(express.static(path.join(__dirname,"/public")));
+//path of the static css in the public folder
 
 
 //Index Route
