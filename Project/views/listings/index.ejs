@@ -1,6 +1,8 @@
 <% layout('/layouts/boilerplate') -%>
 <body>
-  <br>
+  
+ 
+<br />
   <h3>All Listings</h3>
   <!-- <form action="/listings/new" method="GET">
     <button>Create New Listing</button>
@@ -19,7 +21,7 @@
         <div class="card-body">
           <p class="card-text">
             <b><%= listing.title %></b><br />
-            &#8377;<%= listing.price.toLocaleString("en-IN")%> /night
+            &#8377;<%= listing.price.toLocaleString("en-IN")%>/night
           </p>
         </div>
       </div>
@@ -27,4 +29,4 @@
 
     <%}%>
   </div>
-</body>
+</body> 

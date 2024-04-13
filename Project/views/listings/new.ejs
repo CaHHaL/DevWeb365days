@@ -3,7 +3,7 @@
     <div class="col-8 offset-2">
       <br><br>
       <h3>Create a new listing</h3>
-      <form action="/listings" method="POST">
+      <form action="/listings" method="POST" novalidate class="needs-validation">
         <div class="mb-2.2">
           <label for="title" class="form-label">Title</label>
           <input
@@ -11,7 +11,10 @@
             name="listing[title]"
             type="text"
             class="form-control"
+            required
           />
+          <div class="invalid-feedback">Title should be valid</div>
+          <div class="valid-feedback">Title looks good</div>
         </div>
         <div class="mb-2.2">
           <label for="description" class="form-label">Description</label>
@@ -20,7 +23,10 @@
             class="form-control"
             type="text"
             placeholder="Detailed Description"
+            required
           ></textarea>
+          <div class="invalid-feedback">Description should be valid</div>
+          <div class="valid-feedback">Description looks good</div>
         </div>
         <div class="mb-2.2">
           <label for="image" class="form-label">Image URL</label>
@@ -29,7 +35,10 @@
             name="listing[image]"
             type="text"
             class="form-control"
+            required
           />
+          <div class="invalid-feedback">Image url should be valid</div>
+          <div class="valid-feedback">Image url looks good</div>
         </div>
         <div class="row">
           <div class="mb-2.2 col-md-4">
@@ -39,7 +48,11 @@
             name="listing[price]"
             type="number"
             class="form-control"
+            required
           />
+          <div class="invalid-feedback">Price should be valid</div>
+          <div class="valid-feedback">Price looks good</div>
+          
         </div>
         <div class="mb-2.2 col-md-8">
           <label for="country" class="form-label">Country</label>
@@ -48,7 +61,10 @@
             name="listing[country]"
             type="text"
             class="form-control"
+            required
           />
+          <div class="invalid-feedback">Country should be valid</div>
+          <div class="valid-feedback">COuntry looks good</div>
         </div>
         </div>
         
@@ -60,7 +76,10 @@
             name="listing[location]"
             type="text"
             class="form-control"
+            required
           />
+          <div class="invalid-feedback">Location should be valid</div>
+          <div class="valid-feedback">Location looks good</div>
         </div><br>
         <button class="btn btn-dark add-btn">Add</button><br><br>
       </form>
