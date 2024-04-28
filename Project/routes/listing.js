@@ -36,6 +36,10 @@ router.get(
   wrapAsync(async (req, res) => {
     let { id } = req.params;
     const listing = await Listing.findById(id).populate("reviews");
+    if(!listing){
+      req.flash("error","Listing you requested for does not exits!");
+      res.redirect("/listings");
+    }
     res.render("listings/show.ejs", { listing });
   })
 );
@@ -52,6 +56,8 @@ router.post(
     const newListing = new Listing(req.body.listing);
     //here we are using the instance of the new created listing
     await newListing.save();
+    req.flash("success","New Listings Created!");
+    //for flashing the listing created 
     res.redirect("/listings");
   })
 );
@@ -62,6 +68,10 @@ router.get(
   wrapAsync(async (req, res) => {
     let { id } = req.params;
     const listing = await Listing.findById(id);
+    if(!listing){
+      req.flash("error","Listing you requested for does not exits!");
+      res.redirect("/listings");
+    }
     res.render("listings/edit.ejs", { listing });
   })
 );
@@ -73,6 +83,7 @@ router.put(
   wrapAsync(async (req, res) => {
     let { id } = req.params;
     await Listing.findByIdAndUpdate(id, { ...req.body.listing });
+    req.flash("success","Listing Updated!");
     res.redirect(`/listings/${id}/`);
   })
 );
@@ -84,6 +95,7 @@ router.delete(
     let { id } = req.params;
     let deletedListing = await Listing.findByIdAndDelete(id);
     console.log(deletedListing);
+    req.flash("success","Listings Deleted!");
     res.redirect("/listings");
   })
 );
