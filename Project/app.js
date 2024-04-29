@@ -11,6 +11,10 @@ const listings = require("./routes/listing.js");
 const reviews = require("./routes/review.js");
 const session=require("express-session");
 const flash = require("connect-flash");
+const passport=require("passport");
+const LocalStrategy=require("passport-local");
+const User=require("./models/user.js");
+
 
 //Mongo url
 //Mongoose establisment
@@ -70,6 +74,22 @@ const sessionOptions = {
 };
 app.use(session(sessionOptions));
 app.use(flash());
+//passport authenticate
+app.use(passport.initialize());
+app.use(passport.session());
+passport.use(new LocalStrategy(User.authenticate()));
+
+passport.serializeUser(User.serializeUser());
+passport.deserializeUser(User.deserializeUser());
+
+app.get("/demouser",async(req,res)=>{
+  let fakeUser = new User({
+    email:"cahal@gmail.com",
+    username:"Cahal21"
+  });
+  let registerUser=await User.register(fakeUser,"helloworld");
+  res.send(registerUser);
+});
 
 app.use((req,res,next)=>{
   res.locals.success=req.flash("success");
