@@ -2,6 +2,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 const Review = require("./review.js");
+const { string } = require("joi");
 
 //Defining Schema
 const listingSchema = new Schema({
@@ -11,10 +12,8 @@ const listingSchema = new Schema({
   },
   description: String,
   image: {
-    type: String,
-    default:"https://unsplash.com/photos/a-tall-wooden-building-sitting-next-to-a-snow-covered-mountain-OB62rSdkmw0",
-    set:(v)=>v==""?"https://unsplash.com/photos/a-tall-wooden-building-sitting-next-to-a-snow-covered-mountain-OB62rSdkmw0":v,
-    //sets an default image link if we dont enter a image link
+    url:String,
+    filename:String,
 
   },
   price: Number,
