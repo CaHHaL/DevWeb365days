@@ -6,11 +6,12 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node app.js",
-    "dev":"nodemon app.js"
+    "dev": "nodemon app.js"
   },
   "author": "Cahal Agarwalla",
   "license": "ISC",
   "dependencies": {
+    "@mapbox/mapbox-sdk": "^0.16.0",
     "cloudinary": "^2.2.0",
     "connect-flash": "^0.1.1",
     "dotenv": "^16.4.5",
