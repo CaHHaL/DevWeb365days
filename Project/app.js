@@ -36,9 +36,9 @@ async function main() {
 }
 
 //Creating an route
-app.get("/", (req, res) => {
-  res.send("HI my name is cahal");
-});
+// app.get("/", (req, res) => {
+//   res.send("HI my name is cahal");
+// });
 
 //listing an sample in the dBS
 // app.get("/testListing", async (req, res) => {
