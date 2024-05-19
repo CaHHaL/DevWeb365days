@@ -25,3 +25,4 @@ Note :- *We cannot use the similar reserved keyword of JS and HTML with the same
 React Fregment 
 =>Basically help us to terminate the use of extra nodes.
 =>It replaces the root node by <>...</> show that  no extra node is create in the DOM.
+Studied for End term Exam
