@@ -1,0 +1,37 @@
+What is React?
+=>React is a JS library used to create UI in the form of components.
+
+What is JSX?
+=>JavaScript Extension Syntax help us to write html inside JavaScript.
+=>JSX--transpile to --JS using Babel
+
+What are Local environments?
+=>This are packages used to work with react.
+1. Create-React-App 
+2. Vite 
+=>This are popular environments
+
+Why vite over others?
+=>https://medium.com/codex/you-should-choose-vite-over-cra-for-react-apps-heres-why-47e2e7381d13
+In React components are nothing but JS functions
+
+Writing markup JSX rules
+=>Always return a single element.
+=>Close all the tags(We use tags in the form of close in the JSX eg. <Title />).
+=>camelCase is prepared in most of the thing.
+
+Note :- *We cannot use the similar reserved keyword of JS and HTML with the same notation (eg:- class atrribute of html is used as className)*
+
+React Fregment 
+=>Basically help us to terminate the use of extra nodes.
+=>It replaces the root node by <>...</> show that  no extra node is create in the DOM.
+React Props 
+=>This are the information pass to a JSX tags
+React State
+=>Used to re-render the components 
+Hooks
+=>Avaliable with fucntional components added in React 16.8
+=>Help us to write state without writting a class
+=> eg. useState()
+useState()
+=>It is React Hook that lets us add a state variable to your components
