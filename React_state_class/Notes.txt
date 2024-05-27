@@ -35,3 +35,18 @@ Hooks
 => eg. useState()
 useState()
 =>It is React Hook that lets us add a state variable to your components
+Closure
+=>A closure is a feature in Javascript where an inner function hass access to the outer(enclosing) function's variable.
+=> E.g
+function outer(){
+    var b=10;
+    function inner(){
+        var a=20;
+        console.log(a+b);
+    }
+    return inner;
+} 
+Now if the inner function is called then the output will also be equale to 30 because of the use closure
+Note:-Our components variable only update when the component is re rendered
+=>React state only re-renders when the state variable finds some change
+Note:- ... means spread
