@@ -50,3 +50,4 @@ Now if the inner function is called then the output will also be equale to 30 be
 Note:-Our components variable only update when the component is re rendered
 =>React state only re-renders when the state variable finds some change
 Note:- ... means spread
+Exploring new places and going back to home
