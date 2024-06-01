@@ -1,0 +1,21 @@
+#mainDiv{
+    border:3px solid white;
+    width: auto;
+    border-radius: 25px;
+}
+li{
+    text-align: left;
+    margin: 5px;
+    
+}
+input{
+    height: 30px;
+    border-radius: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    font-size: 18px;
+}
+li button{
+    height: 42px;
+   
+}
