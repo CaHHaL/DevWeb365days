@@ -77,7 +77,7 @@ export default function TodoList(){
                    <span style={todo.isDone ?{textDecoration:"line-through",color:"red"}:{}}>{todo.task}</span>
                    &nbsp;&nbsp;
                    <button onClick={()=>{deleteTodo(todo.id)}}>delete</button> &nbsp;
-                   <button onClick={()=>{UpperCaseOne(todo.id)}}>UpperCase</button> &nbsp;
+                   {/* <button onClick={()=>{UpperCaseOne(todo.id)}}>UpperCase</button> &nbsp; */}
                    <button onClick={()=>{markDone(todo.id)}}>Mark as done</button> &nbsp;
                    </li>
                 )

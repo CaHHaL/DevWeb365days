@@ -1,0 +1,10 @@
+.ticket{
+    border: 3px solid cyan;
+    border-radius: 14px;
+}
+button{
+    margin-top: 5px;
+   /* background-color: red !important; */
+   color: rgb(243, 243, 243) !important;
+   border: 3px solid rgb(241, 238, 238) !important;
+}
