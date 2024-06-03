@@ -1,14 +1,11 @@
 import './App.css'
-import Likebutton from './Likebutton'
-import Counter from "./counter"
+import Form from './Form'
 
 function App() {
 
   return (
     <>
-      <h1>States in React</h1>
-      <Likebutton/>
-      <Counter />
+      <Form/>
     </>
   )
 }
