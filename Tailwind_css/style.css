@@ -2,6 +2,3 @@
 @tailwind components;
 @tailwind utilities;
 
-.box{
-    @apply bg-purple-500 text-white m-4 border-2 rounded border-black
-}
