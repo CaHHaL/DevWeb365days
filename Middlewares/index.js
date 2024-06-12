@@ -1,6 +1,8 @@
 const express = require("express");
 const app = express();
 const ExpressError = require("./ExpressError");
+const helmet =require("helmet");
+
 // app.use((req, res, next) => {
 //   console.log("First middleware");
 //   return next();
@@ -15,7 +17,7 @@ const ExpressError = require("./ExpressError");
 //       console.log(req);
 //       next();
 //     });
-
+app.use(helmet());
 app.use("/err/err", (req, res) => {
   abc = abc;
 });
